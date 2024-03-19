@@ -1,9 +1,24 @@
-main {
+* {
+    font-family: "Commissioner", sans-serif;
+}
+
+h1 {
+    font-size: 34px;
+}
+.accueil {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
     width: 100vw;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+
+section {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
 }
 
 @keyframes stretch {
@@ -12,7 +27,7 @@ main {
     }
     
     50% {
-        font-variation-settings: "wght" 800, "wdth" 250;
+        font-variation-settings: "wght" 800, "wdth" 500;
     }
 
     100% {
@@ -21,11 +36,14 @@ main {
 }
 
 .letter {
-    font-family: "Commissioner", sans-serif;
+    
     font-weight: 100;
     color: rgb(255, 198, 83);
     width: auto;
-    animation: stretch 4.4s ease-in-out infinite;
+    animation: stretch 4.8s ease-in-out infinite;
+    display: relative;
+    bottom: 30vh;
+    
 }
 
 .letter:nth-child(1) { animation-delay: 0s; }
@@ -43,6 +61,44 @@ main {
 .letter:nth-child(13) { animation-delay: 3.6s; }
 .letter:nth-child(14) { animation-delay: 3.9s; }
 .letter:nth-child(15) { animation-delay: 4.2s; }
+
+.links{
+    display: flex;
+    align-items: center;
+    border: 1px solid greenyellow;
+
+    & a {
+        color: rgb(255, 198, 83);
+        max-width: 180px;
+        font-size: 21px;
+        text-decoration: none;
+        border: 1px solid rgb(0, 0, 0);
+        
+        
+    }
+}
+
+a {
+    /* Définissez le style de base */
+    font-variation-settings: "wght" 400;
+    transition: font-variation-settings 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+}
+
+a:hover {
+    /* Définissez l'animation au survol */
+    font-variation-settings: "wght" 800; /* Augmentez le poids au survol */
+}
+
+#premier {
+    width: 160px;
+}
+
+#deuxieme {
+    width: 130px;
+}
+#troisieme {
+    width: 140px;
+}
 
 
 
