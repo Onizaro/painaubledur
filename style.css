@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 h1 {
-    font-size: 34px;
+    font-size: 55px;
 }
 
 header {
@@ -86,7 +86,7 @@ section {
 }
 
 a {
-    
+    text-align: center;
     font-variation-settings: "wght" 400;
     transition: font-variation-settings 0.3s ease; 
 }
@@ -97,13 +97,18 @@ a:hover {
 }
 
 #premier {
+    font-size: 40px;
     width: 160px;
 }
 
 #deuxieme {
+    font-size: 40px;
     width: 130px;
+    position :relative;
+    right: 18px;
 }
 #troisieme {
+    font-size: 35px;
     width: 140px;
 }
 
@@ -112,31 +117,45 @@ a:hover {
 
 .carousel {
     display: flex;
-    width: 100vw;
+    width: 99vw;
     position: fixed;
     justify-content: space-around;
     align-items: center;
-    bottom: 0;
+    bottom: 45px;
     gap: 5px;
-    height: 45vh;
-    bottom: 0;
-    border: 1px solid black;
-    
+    height: 30vh;
+    left: 9px;
 }
 
 .carousel p {
-    width: 18%;
+    width: 300px;
+    height: 200px;
+    border-radius: 2rem;
     background-image: url("image1.jpeg");
     background-size: cover;
-    flex-grow: 1;
-    border-radius: .5rem;
-    transition: width 300ms ease-in-out;
+    color: transparent;
+    transition:  300ms ease-out;
+    transition-property: width, height, color, background-color;
     position: relative;
     text-align: center;
+    font-size: 25px;
+    font-weight: 600;
     &:hover{
-        width: 25%
+        width: 550px;
+        height: 350px;
+        color: rgb(255, 198, 83);
+        
     }
-    
-    
+  
 }
+
+#image1 {
+    background-image: url("semoule.jpg");
+    &:hover {
+        color: rgb(145, 114, 51);
+    }
+}
+ #image5 {
+    background-image: url("viking.jpg");
+ }
 
