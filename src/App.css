@@ -45,7 +45,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* La hauteur du mouvement vers le haut */
+    transform: translateY(-10px); 
   }
   100% {
     transform: translateY(0);
@@ -88,7 +88,6 @@ body {
 .carte {
   position: relative;
   display: flex;
-  /*background-color: rgb(167, 51, 51);*/
   background-image: url('red_background.avif');
   background-size: cover;
   align-items: center;
